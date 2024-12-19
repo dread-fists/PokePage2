@@ -1,0 +1,25 @@
+<head>
+    <link rel="stylesheet" href="card.css">
+</head>
+<body>
+    <h1>POKEMON CARD PICKING SIMULATOR</h1>
+    <hr>
+    <script>
+        function random(){
+            var i=parseInt(Math.random()*6,10);
+            if(i>=4){
+                location.href= "win.html";
+            }else{
+                location.href= "fail.html";
+            }
+            
+        }
+    </script>
+    <div class="set">
+        <div class="container">
+            <div class="overlay"></div>
+            <a href="#" onclick="random();"><div class="card"></div></a>
+        </div>
+    </div>
+    <h1>----------------TEST YOUR LUCK---------------</h1>
+</body>
